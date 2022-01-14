@@ -3,6 +3,7 @@ import time
 import os
 from datetime import datetime
 from dotenv import load_dotenv
+import autotimer
 
 flag = load_dotenv()
 
@@ -23,7 +24,9 @@ def printMessage(message=""):
 '''
 Start here
 '''
-os.system("bash logSystemOnOff.sh") 
+os.system("bash logSystemOnOff.sh")
+
+autotimer()
 
 # sendNotificationOnWindows("How was the workout? Share with Penzu")
 printMessage("How was the workout? Share with Penzu")
