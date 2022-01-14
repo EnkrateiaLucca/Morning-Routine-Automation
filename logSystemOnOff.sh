@@ -1,2 +1,1 @@
-echo "$(who -b)" >> /home/lucassoares/Desktop/projects/self_track/logs/systemOnOff.txt
-
+echo -e "$(whoami && date)" >> /mnt/c/Users/Dell/Desktop/2019-2023/time_tracker/Morning-Routine-Automation/systemOnOff.txt
