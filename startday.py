@@ -1,34 +1,12 @@
 import webbrowser
 import time
 import os
-import subprocess
 from datetime import datetime
-from plyer import notification
 
 
 '''
 Utility functions
 '''
-def sendNotificationOnLinux(message):
-    subprocess.Popen(["notify-send", message])
-    return
-
-def sendNotificationOnWindows(title, message, app_image=None):
-    # check fo rimage to be .ico file
-    notification.notify(
-        title = title,
-        message = message,
-        app_icon = app_image,
-        timeout = 10,
-    )
-# def sendNotificationOnWindows(msg="", delay=2):
-#     t = 0
-#     notify = ToastNotifier()
-#     while t < delay:
-#         notify.show_toast("Notification",msg)
-#         time.sleep(1)
-#         t+=1
-
 def continueDay():
     cont = input("Press ENTER too continue")
 
