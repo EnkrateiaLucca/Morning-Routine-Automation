@@ -3,7 +3,7 @@ import time
 import os
 from datetime import datetime
 from dotenv import load_dotenv
-import autotimer
+# import autotimer
 
 flag = load_dotenv()
 
@@ -26,14 +26,10 @@ Start here
 '''
 os.system("bash logSystemOnOff.sh")
 
-autotimer()
-
-# sendNotificationOnWindows("How was the workout? Share with Penzu")
-printMessage("How was the workout? Share with Penzu")
-webbrowser.open(os.getenv("PENZU",alt))
-continueDay()
+# autotimer()
 
 # notion
+printMessage("How was the workout? Share with Penzu")
 printMessage("Check your calendar")
 printMessage("Update Daily Tasks")
 webbrowser.open_new_tab(os.getenv("NOTION",alt))
@@ -80,4 +76,4 @@ printMessage("DSA Practice")
 webbrowser.open(os.getenv("LEETCODE",alt))
 continueDay()
 
-printMessage("Let's take a bread!")
+printMessage("Let's take a break!")
